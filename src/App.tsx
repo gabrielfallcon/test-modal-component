@@ -1,15 +1,17 @@
 import { useState } from 'react';
 
-import { Modal } from './components';
+import '../node_modules/renner-design-system/dist/renner-design-system.css';
+
+import { Modal, Button } from 'renner-design-system';
 
 function App() {
   const [modalActive, setModalActive] = useState(false);
 
   return (
     <>
-      <button onClick={() => setModalActive(true)}>
+      <Button onClick={() => setModalActive(true)}>
         Abrir Modal
-      </button>
+      </Button>
 
       <Modal
         active={modalActive} 
