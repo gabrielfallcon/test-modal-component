@@ -1,25 +1,212 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+
+import { Modal } from './components';
 
 function App() {
+  const [modalActive, setModalActive] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <button onClick={() => setModalActive(true)}>
+        Abrir Modal
+      </button>
+
+      <Modal
+        active={modalActive} 
+        handleClose={() => setModalActive(false)}
+      >
+        <table className="table-frete-gratis">
+          <tbody>
+              <tr>
+              <th>
+              Região</th>
+            <th>
+              Compras a partir de</th>
+            </tr>
+            <tr>
+              <td>
+              Sudeste (capitais e regiões metropolitanas)</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sudeste (interior e litoral)</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sul</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Centro-Oeste</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Nordeste</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Norte</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sudeste (capitais e regiões metropolitanas)</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sudeste (interior e litoral)</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sul</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Centro-Oeste</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Nordeste</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Norte</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sudeste (capitais e regiões metropolitanas)</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sudeste (interior e litoral)</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sul</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Centro-Oeste</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Nordeste</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Norte</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sudeste (capitais e regiões metropolitanas)</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sudeste (interior e litoral)</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sul</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Centro-Oeste</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Nordeste</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Norte</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sudeste (capitais e regiões metropolitanas)</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sudeste (interior e litoral)</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Sul</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Centro-Oeste</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Nordeste</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            <tr>
+              <td>
+              Norte</td>
+            <td>
+              R$ 99,90</td>
+            </tr>
+            </tbody>
+          </table>
+      </Modal>
+    </>
   );
 }
 
